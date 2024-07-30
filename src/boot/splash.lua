@@ -11,6 +11,9 @@ function splash_screen.load(logo_path, optional_fade_speed)
     if optional_fade_speed then
         fade_speed = optional_fade_speed
     end
+
+    done = false;
+    alpha = 1;
 end
 
 function splash_screen.update(dt)

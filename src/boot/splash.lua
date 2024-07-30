@@ -24,7 +24,6 @@ function splash_screen.update(dt)
 end
 
 function splash_screen.draw()
-    love.graphics.setBackgroundColor(0.1, 0.1, 0.1, 1)
     love.graphics.setColor(1, 1, 1, alpha)
     love.graphics.draw(logo, (width / 2) - (logo:getWidth() / 2), (height / 2) - (logo:getHeight() / 2))
     love.graphics.setColor(1, 1, 1, 1)

@@ -1,4 +1,4 @@
 #!/bin/bash
 ./build.sh
-love game.love
+love game.love ${@}
 rm game.love

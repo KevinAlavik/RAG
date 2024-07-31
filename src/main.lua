@@ -8,7 +8,7 @@ local game_setup = false;
 function love.load()
     logger.debug("Pre-Game", "Loading splash screen");
     love.graphics.setBackgroundColor(0.1, 0.1, 0.1, 1);
-    splash_screen.load("assets/logo.png", 1);
+    splash_screen.load("assets/logo.png", 0.75);
     logger.debug("Pre-Game", "Successfully setup game");
 end
 

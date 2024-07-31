@@ -1,6 +1,6 @@
-local splash_screen = require("src.boot.splash");
-local game = require("src.core.game");
-local logger = require("src.utils.logger");
+local splash_screen = require("src.boot.splash")
+local game = require("src.core.game")
+local logger = require("src.utils.logger")
 
 local state = "splash";
 local game_setup = false;

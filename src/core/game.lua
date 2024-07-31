@@ -1,16 +1,26 @@
 local logger = require("src.utils.logger")
 local game = {}
 
-local x, y, w, h;
+local x, y, w, h, speed;
 
 function game.setup()
     logger.info("Game Main", "RAG Loaded!");
-    x, y, w, h = 20, 20, 60, 20;
+    x, y, w, h = 20, 20, 60, 60;
+    speed = 200;
 end
 
 function game.update(dt)
-    w = w + 1;
-    h = h + 1;
+    if love.keyboard.isDown("up") then
+        y = y - speed * dt;
+    elseif love.keyboard.isDown("down") then
+        y = y + speed * dt;
+    end
+    
+    if love.keyboard.isDown("right") then
+        x = x + speed * dt;
+    elseif love.keyboard.isDown("left") then
+        x = x - speed * dt;
+    end
 end
 
 function game.draw()
